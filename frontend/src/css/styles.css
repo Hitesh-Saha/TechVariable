@@ -23,6 +23,13 @@
   text-transform: capitalize;
 }
 
+.logo{
+  display: inline-flex;
+}
+
+.logo img{
+  margin: 0.4rem;
+}
 .menu{
   display: flex;
   margin: 0.5rem;
@@ -56,8 +63,8 @@
 }
 .cards .profile img{
   border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 .cards .border{
@@ -89,6 +96,7 @@
   align-items: center;
   justify-content: center;
   margin: 0;
+  font-weight: 600;
   font-size: 1rem;
 }
 
