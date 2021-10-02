@@ -6,7 +6,7 @@ export default function Dropdown({update}){
     const [available, setAvailable] = useState("Availability");
     const [city, setCity] = useState("Select a city");
 
-    const fetchApi = async (key, key2) => {
+    const fetchApi = async (key,key2) => {
         const response = await fetch ("/api/");
         const res = await response.json();
 
@@ -41,13 +41,13 @@ export default function Dropdown({update}){
     return (
         <div className="bg-light mx-3 navbar">  
             <div className="container-fluid brand px-3 py-2">
-                <div>
-                    <span><img src="./assets/logo.jpg" style={{height: "2rem", width: "2rem"}} alt="error loading"/></span>
+                <div className="logo">
+                    <img src="./assets/logo.jpg" style={{height: "2rem", width: "2rem"}} alt="error loading"/>
                     <h2>Board of doctors</h2>
                 </div>
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a className="nav-link disabled" href="#">LogIn<span><i className="fas fa-sign-in-alt"></i></span></a>
+                        <a className="nav-link disabled" href="#">LogIn&nbsp;<span><i className="fas fa-sign-in-alt"></i></span></a>
                     </li>
                 </ul>
             </div>
