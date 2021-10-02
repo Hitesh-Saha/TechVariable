@@ -6,12 +6,10 @@ export default function Cards(){
     const[results,setResults] = useState([]);
 
     const value = (data) =>{
-        setResults(data);
-        
+        setResults(data);     
     }
 
     const showCard = (val) => {
-        console.log(val.img);
         return (
             <Card
               imgsrc={val.img}
