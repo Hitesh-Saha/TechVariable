@@ -15,7 +15,7 @@ export default function Dropdown({update}){
                 return Object.values(res)
                 .join(" ")
                 .toLowerCase()
-                .includes(key.toLowerCase() && key2.toLowerCase());
+                .includes(key.toLowerCase());
             });
             update(newResults);
         }
@@ -42,12 +42,12 @@ export default function Dropdown({update}){
         <div className="bg-light mx-3 navbar">  
             <div className="container-fluid brand px-3 py-2">
                 <div>
-                    <span></span>
+                    <span><img src="./assets/logo.jpg" style={{height: "2rem", width: "2rem"}} alt="error loading"/></span>
                     <h2>Board of doctors</h2>
                 </div>
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a className="nav-link disabled" href="#">LogIn</a>
+                        <a className="nav-link disabled" href="#">LogIn<span><i className="fas fa-sign-in-alt"></i></span></a>
                     </li>
                 </ul>
             </div>

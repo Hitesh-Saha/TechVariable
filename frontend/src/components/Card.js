@@ -7,7 +7,7 @@ export default function Card(props) {
             <div className = "cards container-fluid">
                 <div className="row">
                     <div className = " profile col-3">
-                        <img src={props.imgsrc} alt="error"/>
+                        <img src={props.imgsrc} className="img-fluid" alt="error"/>
                     </div>
                     <div className = "info col-7">
                         <h5>{props.name}</h5>
@@ -15,7 +15,7 @@ export default function Card(props) {
                         <p>{props.edu}</p>
                         <p>{props.specialize}</p>
                     </div>
-                    <div className = "fees col-2">{props.fee}</div>
+                    <div className = "fees col-2"><span><i className="fas fa-rupee-sign"></i></span>{props.fee}</div>
                 </div>
                 <div className="border mx-auto"></div>
             </div>

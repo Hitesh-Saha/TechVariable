@@ -7,9 +7,11 @@ export default function Cards(){
 
     const value = (data) =>{
         setResults(data);
+        
     }
 
     const showCard = (val) => {
+        console.log(val.img);
         return (
             <Card
               imgsrc={val.img}
