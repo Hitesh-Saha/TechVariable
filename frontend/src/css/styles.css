@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+  background-color: rgba(226, 226, 226, 0.877);
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+}
+
+.body{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.brand{
+  background: linear-gradient(to top right, rgba(71, 155, 250, 0.712), rgb(106, 167, 185));
+  color: white;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.menu{
+  display: flex;
+  margin: 0.5rem;
+}
+
+.card-cover{
+  display: flex;
+  flex-direction: column;
+  height: 14rem;
+  width: 28rem;
+  border: none;
+  margin: 1rem;
+  font-size: 0.7rem;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 10px rgb(59, 106, 160);
+}
+
+.cards{
+  height: 10rem;
+  width: 28rem;
+  padding: 0.5rem 0.5rem 0rem 0.5rem;
+  margin: 0;
+  position: relative;
+  top: 0;
+}
+
+.cards .profile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards .profile img{
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+.cards .border{
+  width: 90%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+}
+
+.cards .info {
+  height: 100%;
+  padding: 0.2rem 0.4rem 0;
+  margin: 0;
+}
+
+.cards .info h5{
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.cards .info p{
+  margin: 0;
+  padding: 0.2rem 0;
+  text-transform: capitalize;
+}
+
+.cards .fees{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.tag{
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tag .availability{
+  padding: 0.5rem;
+  text-transform: capitalize;
+}
+
+.tag .schedule{
+  padding: 0.5rem;
+}
+
+.tag .schedule button{
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.card-cover:hover{
+  background: linear-gradient(to top right, rgba(7, 121, 252, 0.712), rgba(7, 195, 252, 0.699));
+}
