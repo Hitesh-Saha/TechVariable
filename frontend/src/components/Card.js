@@ -15,7 +15,7 @@ export default function Card(props) {
                         <p>{props.edu}</p>
                         <p>{props.specialize}</p>
                     </div>
-                    <div className = "fees col-2"><span><i className="fas fa-rupee-sign"></i></span>{props.fee}</div>
+                    <div className = "fees col-2"><span><i className="fas fa-rupee-sign"></i></span>&nbsp;{props.fee}</div>
                 </div>
                 <div className="border mx-auto"></div>
             </div>
